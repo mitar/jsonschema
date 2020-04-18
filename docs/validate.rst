@@ -213,7 +213,7 @@ existing `TypeChecker` or create a new one. You may then create a new
 
     def is_my_int(checker, instance):
         return (
-            Draft3Validator.TYPE_CHECKER.is_type(instance, "number") or
+            checker.is_type(instance, "number") or
             isinstance(instance, MyInteger)
         )
 
